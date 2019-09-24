@@ -14,6 +14,7 @@ public static final String TRAINING_XPATH = "//a[@id='sn_training']";
 public static final String STAFF_XPATH = "//a[@id='sn_staff']";
 public static final String PAYROLL_XPATH = "//a[@id='sn_payroll']";
 public static final String REPORTS_XPATH = "//a[@id='sn_reports']";
+public static final String SETINGS_XPATH = "//i[@class='primNavQtip__icon icon-gear']";
 
 // klik na tablu
 public static WebElement getDashboard(WebDriver driver) {
@@ -86,7 +87,15 @@ return driver.findElement(By.xpath(REPORTS_XPATH));
 public static void clickReports(WebDriver driver) {
 getReports(driver).click();
 }
+//klik na setings
+public static WebElement getSetings(WebDriver driver) {
+return driver.findElement(By.xpath(SETINGS_XPATH));
+}
 
+public static void clickSetings(WebDriver driver) {
+getSetings(driver).click();
+
+  }
 }
 
 
@@ -94,4 +103,4 @@ getReports(driver).click();
 
 
 
-}
+

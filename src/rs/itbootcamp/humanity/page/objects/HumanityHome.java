@@ -81,6 +81,9 @@ public class HumanityHome {
 	public static WebElement getEmail(WebDriver driver) {
 		return driver.findElement(By.xpath(EMAIL_XPATH));
 	}
+	public static void clickEmail(WebDriver driver) {
+		getEmail(driver).click();
+	}
 
 	public static void inputEmail(WebDriver driver, String data) {
 		getEmail(driver).sendKeys(data);
@@ -89,13 +92,18 @@ public class HumanityHome {
 	public static WebElement getPassword(WebDriver driver) {
 		return driver.findElement(By.xpath(PASSWORD_XPATH));
 	}
-
+	public static void clickPassword(WebDriver driver) {
+		getPassword(driver).click();
+	}
 	public static void inputPassword(WebDriver driver, String data) {
 		getPassword(driver).sendKeys(data);
 	}
 
 	public static WebElement getLoginLogin(WebDriver driver) {
 		return driver.findElement(By.xpath(LOGIN_LOGIN_XPATH));
+	}
+	public static void clickLoginLogin(WebDriver driver) {
+		getLoginLogin(driver).click();
 	}
 
 }
