@@ -5,15 +5,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HumanityStaff {
-
+    
+	private static final String STAFF_XPATH ="//a[@id='sn_staff']";
 	private static final String ADD_XPATH = "//button[@id='act_primary']";
 	private static final String FIRST_NAME_XPATH = "//input[@id='_asf1']";
 	private static final String LAST_NAME_XPATH = "//input[@id='_asl1']";
 	private static final String EMAIL_XPATH = "//input[@id='_ase1']";
 	private static final String SAVE_EMPLOYEL_XPATH = "//button[@id='_as_save_multiple']";
 	private static final String CHECK_XPATH = "//a[@id='sn_staff']";
-
-	//upisivanje zaposlenih
+	
+	//dugme za upisivanje zaposlenih
+	public static WebElement getStaff(WebDriver driver) {
+		return driver.findElement(By.xpath(STAFF_XPATH));
+	}
+	public static void clicStaff(WebDriver driver) {
+		getStaff(driver).click();
+	}
+		
+	// dodavanje zaposlenih
 	public static WebElement getAdd(WebDriver driver) {
 		return driver.findElement(By.xpath(ADD_XPATH));
 	}

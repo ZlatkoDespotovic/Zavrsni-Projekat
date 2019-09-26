@@ -9,7 +9,7 @@ public class HumanityHome {
 	private static final String FULL_NAME_XPATH = "//div[@class='input-wrapper']//input[@placeholder='Full Name']";
 	private static final String WORK_EMAIL_XPATH = "//div[@class='input-wrapper']//input[@placeholder='Work Email']";
 	private static final String START_FREE_TRAIL1_XPATH = "//input[@id='free-trial-link-01']";
-	private static final String LOGIN_XPATH = "//i[@class='primNavQtip__icon icon-chart']";
+	private static final String LOGIN_XPATH = "//p[contains(text(),'LOGIN')]";
 	private static final String LOGIN_LOGIN_XPATH = "//button[contains(text(),'Log in')]";
 	private static final String START_FREE_TRAIL_2_XPATH = "//a[@class='button pale']";
 	private static final String ABOUT_US_XPATH = "//a[@class='nav-link no-before'][contains(text(),'About us')]";
@@ -77,6 +77,7 @@ public class HumanityHome {
 	public static void clickLogin(WebDriver driver) {
 		getLogin(driver).click();
 	}
+// dugme Email
 
 	public static WebElement getEmail(WebDriver driver) {
 		return driver.findElement(By.xpath(EMAIL_XPATH));
@@ -88,6 +89,7 @@ public class HumanityHome {
 	public static void inputEmail(WebDriver driver, String data) {
 		getEmail(driver).sendKeys(data);
 	}
+// dugme password
 
 	public static WebElement getPassword(WebDriver driver) {
 		return driver.findElement(By.xpath(PASSWORD_XPATH));
@@ -98,6 +100,7 @@ public class HumanityHome {
 	public static void inputPassword(WebDriver driver, String data) {
 		getPassword(driver).sendKeys(data);
 	}
+// dugme log in
 
 	public static WebElement getLoginLogin(WebDriver driver) {
 		return driver.findElement(By.xpath(LOGIN_LOGIN_XPATH));
