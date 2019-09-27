@@ -34,7 +34,7 @@ import rs.itbootcamp.humanity.page.objects.HumanityHome;
 				HumanityStaff.enterLastName(driver, "Djavo");
 				HumanityStaff.clickEmail(driver);
 				HumanityStaff.enterEmail(driver, "tasmanijskidjavo@gotmail.com");
-				HumanityStaff.clickSaveEmp(driver);
+				HumanityStaff.clickSaveEmployel(driver);
 				HumanityStaff.clickCheck(driver);
 				
 				Thread.sleep(5000);

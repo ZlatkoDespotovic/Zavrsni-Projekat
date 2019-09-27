@@ -9,7 +9,7 @@ public class HumanitySlika {
 	private static final String DETAILS_XPATH = "//a[contains(text(),'Edit Details')]";
 	private static final String UPLOAD_XPATH = "//input[@id='fileupload']";
 
-	// Emp Name
+	// dugme za Employee Name
 	public static WebElement getEmployee(WebDriver driver) {
 		return driver.findElement(By.xpath(EMPLOYEE_XPATH));
 	}
@@ -18,7 +18,7 @@ public class HumanitySlika {
 		getEmployee(driver).click();
 	}
 
-	// Details
+	// dugme za Details
 	public static WebElement getDetails(WebDriver driver) {
 		return driver.findElement(By.xpath(DETAILS_XPATH));
 	}
@@ -27,7 +27,7 @@ public class HumanitySlika {
 		getDetails(driver).click();
 	}
 
-	// Upload
+	// dugme za Upload
 	public static WebElement getUpload(WebDriver driver) {
 		return driver.findElement(By.xpath(UPLOAD_XPATH));
 	}

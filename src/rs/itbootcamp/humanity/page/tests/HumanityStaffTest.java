@@ -9,6 +9,7 @@ import rs.itbootcamp.humanity.page.objects.HumanityEditStaff;
 import rs.itbootcamp.humanity.page.objects.HumanityHome;
 import rs.itbootcamp.humanity.page.objects.HumanityMenu;
 import rs.itbootcamp.humanity.page.objects.HumanitySlika;
+import rs.itbootcamp.humanity.page.objects.HumanityStaff;
 
 public class HumanityStaffTest {
 	public static boolean TestPicture() throws Exception {
@@ -30,6 +31,10 @@ public class HumanityStaffTest {
 		HumanityEditStaff.getUploadPicture(driver);
 		HumanityEditStaff.dodajSliku(driver);
 		
+		
+
+		Thread.sleep(5000);
+		driver.quit();
 		
 		return true;
      }
